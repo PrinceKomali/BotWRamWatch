@@ -1,0 +1,58 @@
+<head>
+    <style>
+        #base {
+            -webkit-text-stroke: 1px #f5a338;
+        }
+        .s {
+            margin-left: 5px;
+            margin-right: 10px;
+            -webkit-text-stroke: 1px rgba(26, 124, 255, .9);
+            font-family: "Sheikah Sheikah Writing" !important;
+        }
+        body {
+            background-color: black;
+            font-family: Monospace;
+            font-weight: bold;
+            color: white;
+            font-size: 30px;
+        }
+        img {
+            margin-right: 10px;
+            height: 30px;
+            width: auto;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <p><img src="./assets/marker.png">Base Address: 0x<span id="base">0</span></p>
+    <p><img src="./assets/heart.png">Health: <span id="health">0</span></p>
+    <p><span class='s'>X</span>X: <span id="x">0</span></p>
+    <p><span class='s'>Z</span>Z: <span id="z">0</span></p>
+    <p><img src="./assets/haste.png">Speed: <span id="spd">0</span></p>
+    <script>
+        let x = document.querySelector("#x");
+        let z = document.querySelector("#z");
+        let base = document.querySelector("#base");
+        let health = document.querySelector("#health");
+        let speed = document.querySelector("#spd");
+
+        let ws = new WebSocket('ws://localhost:3002/ws');
+        ws.addEventListener('message', function (data) {
+            data = JSON.parse(data.data);
+            health.innerText = data.health
+            x.innerText = (+data.x).toFixed(5)
+            
+            z.innerText = (+data.z).toFixed(5)
+            speed.innerText = (+data.spd).toFixed(5)
+            if(+data.paused) {
+                document.querySelectorAll("p,img").forEach(x=>x.style.opacity = 0.9)
+            }
+            else {
+                document.querySelectorAll("p,img").forEach(x=>x.style.opacity = 1)
+            }
+            //s.push(data.x,data.z);
+            base.innerText = data.mem.split("0x")[1].toUpperCase()
+        });
+    </script>
+</body>

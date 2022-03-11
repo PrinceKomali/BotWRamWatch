@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ram", "ram\ram.vcxproj", "{47EBBE52-0C3E-4F26-999A-6AC7116DD656}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ram_dll", "ram_dll\ram_dll.vcxproj", "{7F1EB6CC-3421-485F-BB8D-9C2E9F552370}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47EBBE52-0C3E-4F26-999A-6AC7116DD656}.Debug|x64.ActiveCfg = Debug|x64
+		{47EBBE52-0C3E-4F26-999A-6AC7116DD656}.Debug|x64.Build.0 = Debug|x64
+		{47EBBE52-0C3E-4F26-999A-6AC7116DD656}.Debug|x86.ActiveCfg = Debug|Win32
+		{47EBBE52-0C3E-4F26-999A-6AC7116DD656}.Debug|x86.Build.0 = Debug|Win32
+		{47EBBE52-0C3E-4F26-999A-6AC7116DD656}.Release|x64.ActiveCfg = Release|x64
+		{47EBBE52-0C3E-4F26-999A-6AC7116DD656}.Release|x64.Build.0 = Release|x64
+		{47EBBE52-0C3E-4F26-999A-6AC7116DD656}.Release|x86.ActiveCfg = Release|Win32
+		{47EBBE52-0C3E-4F26-999A-6AC7116DD656}.Release|x86.Build.0 = Release|Win32
+		{7F1EB6CC-3421-485F-BB8D-9C2E9F552370}.Debug|x64.ActiveCfg = Debug|x64
+		{7F1EB6CC-3421-485F-BB8D-9C2E9F552370}.Debug|x64.Build.0 = Debug|x64
+		{7F1EB6CC-3421-485F-BB8D-9C2E9F552370}.Debug|x86.ActiveCfg = Debug|Win32
+		{7F1EB6CC-3421-485F-BB8D-9C2E9F552370}.Debug|x86.Build.0 = Debug|Win32
+		{7F1EB6CC-3421-485F-BB8D-9C2E9F552370}.Release|x64.ActiveCfg = Release|x64
+		{7F1EB6CC-3421-485F-BB8D-9C2E9F552370}.Release|x64.Build.0 = Release|x64
+		{7F1EB6CC-3421-485F-BB8D-9C2E9F552370}.Release|x86.ActiveCfg = Release|Win32
+		{7F1EB6CC-3421-485F-BB8D-9C2E9F552370}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63394850-AC41-4771-8CF2-65A7CEC5376C}
+	EndGlobalSection
+EndGlobal
