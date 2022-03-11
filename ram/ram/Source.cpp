@@ -53,7 +53,7 @@ DWORD GetProcId(const wchar_t* procName)
 }
 int main()
 {
-    const char* dllPath = "C:\\Users\\Konstrictor\\Documents\\..ram\\DLL\\ram_dll.dll";
+    const char* dllPath = ".\\DLL\\ram_dll.dll";
     const wchar_t* procName = TEXT("Cemu.exe");
     DWORD procId = 0;
     std::cout << "Looking for Cemu...\n";
